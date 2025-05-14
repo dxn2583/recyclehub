@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecycleHub - Ανακύκλωση</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Αρχική</a></li>
+        <li><a href="#about">Σχετικά</a></li>
+        <li><a href="#map">Χάρτης</a></li>
+        <li><a href="#contact">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>RecycleHub</h1>
+
+    <div class="dropdown">
+      <label for="category">Κατηγορία</label>
+      <select id="category">
+        <option>Όλες</option>
+        <option>♳ Πλαστικό</option>
+        <option>📄 Χαρτί</option>
+        <option>🍾 Γυαλί</option>
+      </select>
+    </div>
+
+    <div class="dropdown">
+      <label for="city">Πόλη</label>
+      <select id="city">
+        <option>Όλες</option>
+        <option>Αθήνα</option>
+        <option>Θεσσαλονίκη</option>
+        <option>Πάτρα</option>
+        <option>Ηράκλειο</option>
+         <option>Λάρισα</option>
+        <option>Βόλος</option>
+        <option>Ιωάννινα</option>
+        <option>Καλαμάτα</option>
+         <option>Ρόδος</option>
+        <option>Χανιά</option>
+        
+      </select>
+    </div>
+
+    <section class="card">
+      <h2>Δεδομένα από βάση</h2>
+      <div id="data-container"></div>
+    </section>
+
+    <section id="home" class="card">
+      <h2><span class="material-icons icon">home</span> RecycleHub</h2>
+      <p>Η πλατφόρμα <strong>RecycleHub</strong> σας βοηθά να ανακαλύψετε σημεία ανακύκλωσης στην πόλη σας, να ενημερωθείτε για τα υλικά και να κάνετε το επόμενο βήμα για ένα καθαρότερο περιβάλλον.</p>
+    </section>
+
+    <section id="about" class="card">
+      <h2><span class="material-icons icon">info</span> Σχετικά</h2>
+      <p>Μέσα από εύχρηστα εργαλεία και χάρτες, μπορείτε να βρείτε τον πλησιέστερο κάδο, να φιλτράρετε ανά κατηγορία (♳ Πλαστικό, 📄 Χαρτί, 🍾 Γυαλί) και να συμβάλετε στην προστασία του πλανήτη.</p>
+    </section>
+
+    <section id="map" class="card">
+      <h2><span class="material-icons icon">map</span> Χάρτης</h2>
+      <div id="map-container">Ο χάρτης θα εμφανιστεί εδώ.</div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2><span class="material-icons icon">contact_mail</span> Επικοινωνία</h2>
+      <p>Μη διστάσετε να επικοινωνήσετε για προτάσεις ή σχόλια.</p>
+      <form>
+        <label for="name">Όνομα:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Μήνυμα:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Αποστολή</button>
+      </form>
+    </section>
+
+    <div style="text-align:center; margin-top: 40px;">
+      <a href="https://yourwebapp.com" target="_blank" class="button-link">Άνοιγμα Web Εφαρμογής</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 RecycleHub. Όλα τα δικαιώματα κατοχυρωμένα.
+  </footer>
+
+</body>
+</html>
