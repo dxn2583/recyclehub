@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Μηνύματα</title>
+</head>
+<body>
+  <h1>Ληφθέντα Μηνύματα</h1>
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>Όνομα</th>
+      <th>Μήνυμα</th>
+    </tr>
+    {% for name, message in messages %}
+    <tr>
+      <td>{{ name }}</td>
+      <td>{{ message }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <br>
+  <a href="/">Πίσω στη φόρμα</a>
+</body>
+</html>
